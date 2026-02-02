@@ -1,7 +1,7 @@
 # Overview
 During a security assessment of the e-commerce application, I identified a critical low-level logic flaw in the purchase workflow. The application’s handling of item quantities and total price calculations allowed an attacker to trigger an integer overflow, causing high-value purchases to appear at negative or unintended prices. By carefully manipulating the quantity parameter over multiple requests, I was able to place an order far exceeding the intended transaction logic without proper payment. This demonstrates a severe business logic vulnerability with significant financial risk.
 
-# Steps Undertaken
+# Methodology
 
 Step 1: Intercepted purchase requests using Burp Suite to analyze quantity and pricing logic.
 
